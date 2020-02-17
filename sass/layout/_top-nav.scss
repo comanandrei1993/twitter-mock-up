@@ -18,11 +18,41 @@
         padding: .4rem 1rem;
         background-color: $input-color-1;
         box-shadow: 0 -.5rem 1rem inset $input-color-2;
+        border: 1px solid transparent;
         border-radius: 2.5rem;
+
+        position: relative;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $color-primary;
+            border: 1px solid $btn-color-primary;
+            box-shadow: 0 0 0 inset $color-primary;
+        }
+
+        &:hover:after,
+        &:active:after,
+        &:focus:after {
+            content: 'Try searching for people, topics, or keywords';
+            font-size: 1.6rem;
+            font-weight: 100;
+            color: $input-font-color;
+            position: absolute;
+            top: 3.2rem;
+            right: 0;
+            padding-top: 2rem;
+            height: 10rem;
+            width: 100%;
+            text-align: center;
+            background-color: $color-primary;
+            box-shadow: 0rem 0rem .3rem $input-font-color;
+            border-radius: 5px;
+        }
     }
 
     &__input {

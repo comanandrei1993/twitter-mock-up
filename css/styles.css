@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: inherit; }
 
+a {
+  text-decoration: none; }
+
 body {
   box-sizing: border-box;
   background-color: #15202B;
@@ -26,16 +29,15 @@ body {
   margin: 0 auto; }
 
 .btn {
-  padding: .5rem 0;
+  padding: .5rem 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   color: #1da1f2;
+  background-color: #15202B;
   border: 1px solid #1da1f2;
   border-radius: 2.5rem;
   transition: all .1s ease-in; }
-  .btn, .btn:link, .btn:visited {
-    text-decoration: none; }
   .btn:hover, .btn:active {
     background-color: #162D3F; }
   .btn--filled {
@@ -47,7 +49,9 @@ body {
 
 .header {
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 10000;
+  background-color: #15202B; }
 
 .top-nav {
   padding: 1rem;
@@ -62,10 +66,31 @@ body {
     padding: .4rem 1rem;
     background-color: #253341;
     box-shadow: 0 -0.5rem 1rem inset #374553;
+    border: 1px solid transparent;
     border-radius: 2.5rem;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .top-nav__search-bar:hover, .top-nav__search-bar:active, .top-nav__search-bar:focus {
+      background-color: #15202B;
+      border: 1px solid #1da1f2;
+      box-shadow: 0 0 0 inset #15202B; }
+    .top-nav__search-bar:hover:after, .top-nav__search-bar:active:after, .top-nav__search-bar:focus:after {
+      content: 'Try searching for people, topics, or keywords';
+      font-size: 1.6rem;
+      font-weight: 100;
+      color: #6f7b86;
+      position: absolute;
+      top: 3.2rem;
+      right: 0;
+      padding-top: 2rem;
+      height: 10rem;
+      width: 100%;
+      text-align: center;
+      background-color: #15202B;
+      box-shadow: 0rem 0rem 0.3rem #6f7b86;
+      border-radius: 5px; }
   .top-nav__input {
     font-size: 1.6rem;
     padding: 0 2rem;
@@ -94,3 +119,23 @@ body {
     grid-area: 2 / 1 / 3 / 3; }
   .top-nav__signup-btn {
     grid-area: 2 / 3 / 3 /5; }
+
+.user-details {
+  font-size: 1.6rem; }
+  .user-details__header {
+    height: 30rem;
+    max-width: 100%;
+    width: auto;
+    margin-bottom: 1rem;
+    position: relative; }
+  .user-details__cover-img {
+    max-height: 20rem;
+    height: auto;
+    width: 100%; }
+  .user-details__profile-img-container {
+    height: 30%;
+    width: 15%; }
+  .user-details__profile-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; }

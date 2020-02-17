@@ -6,13 +6,16 @@
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     box-sizing: border-box;
     background-color: $color-primary;
-    height: 500rem;
 
     // testing
-    // color: #465a6e;
+    height: 500rem;
 }
 
 html {
