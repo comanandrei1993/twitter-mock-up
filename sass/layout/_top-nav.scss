@@ -1,9 +1,10 @@
 .top-nav {
+    padding: 1rem;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    
+    grid-gap: 2rem 1rem;
 
     &__icon {
         height: 2.5rem;
@@ -14,39 +15,55 @@
     }
 
     &__search-bar {
-        padding: .2rem .5rem;
+        padding: .4rem 1rem;
         background-color: $input-color-1;
         box-shadow: 0 -.5rem 1rem inset $input-color-2;
         border-radius: 2.5rem;
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__input {
+        font-size: 1.6rem;
+        padding: 0 2rem;
         background-color: transparent;
         color: $input-font-color;
-        text-decoration: underline;
         border: none;
-        cursor: pointer;
 
         flex-basis: 96.5%;
     }
 
-    // grid elements
     &__twitter-icon-link {
-        grid-area: 1 / 1 / 2 / 2;
-        align-self: end;
+        display: flex;
+        align-items: center;
+    }
+
+    &__more-icon-link {
+        margin-right: .5rem;
 
         display: flex;
+        align-items: center;
+    }
+
+    // grid elements
+    &__twitter-icon-box {
+        grid-area: 1 / 1 / 2 / 2;
+
+        display: flex;
+        justify-content: flex-start;
     }
 
     &__search-bar {
         grid-area: 1 / 2 / 2 / 4;
     }
 
-    &__more-icon {
+    &__more-icon-box {
         grid-area: 1 / 4 / 2 / 5;
+
+        display: flex;
+        justify-content: flex-end;
     }
 
     &__login-btn {

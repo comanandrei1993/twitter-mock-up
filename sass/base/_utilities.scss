@@ -1,4 +1,10 @@
+.hr-thin {
+    border: 0;
+    height: 1px;
+    background-color: $color-primary-lighter-2;
+}
+
 .wrapper {
-    max-width: 100rem;
+    max-width: 62rem;
     margin: 0 auto;
 }
