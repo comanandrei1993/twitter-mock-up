@@ -1,0 +1,59 @@
+.top-nav {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+
+    &__icon {
+        height: 2.5rem;
+
+        &--more {
+            height: 1.75rem;
+        }
+    }
+
+    &__search-bar {
+        padding: .2rem .5rem;
+        background-color: $input-color-1;
+        box-shadow: 0 -.5rem 1rem inset $input-color-2;
+        border-radius: 2.5rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input {
+        background-color: transparent;
+        color: $input-font-color;
+        text-decoration: underline;
+        border: none;
+        cursor: pointer;
+
+        flex-basis: 96.5%;
+    }
+
+    // grid elements
+    &__twitter-icon-link {
+        grid-area: 1 / 1 / 2 / 2;
+        align-self: end;
+
+        display: flex;
+    }
+
+    &__search-bar {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+    &__more-icon {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    &__login-btn {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    &__signup-btn {
+        grid-area: 2 / 3 / 3 /5;
+    }
+}

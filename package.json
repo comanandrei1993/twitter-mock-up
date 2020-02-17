@@ -1,0 +1,22 @@
+{
+  "name": "iquest-tema-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comanandrei1993/iQuest-tema-css.git"
+  },
+  "author": "coman-andrei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/comanandrei1993/iQuest-tema-css/issues"
+  },
+  "homepage": "https://github.com/comanandrei1993/iQuest-tema-css#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

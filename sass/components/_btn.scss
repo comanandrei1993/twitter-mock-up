@@ -1,0 +1,33 @@
+.btn {
+    padding: .5rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: $btn-color-primary;
+    border: 1px solid $btn-color-primary;
+    border-radius: 2.5rem;
+
+    transition: all .1s ease-in;
+
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $color-primary-lighter;
+    }
+
+    &--filled {
+        background-color: $btn-color-primary;
+        color: $color-white;
+
+        &:hover,
+        &:active {
+            background-color: $btn-color-primary-darker;
+            border: 1px solid $btn-color-primary-darker;
+        }
+    }
+}

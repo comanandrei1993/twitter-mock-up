@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-primary;
+
+    // testing
+    // color: #465a6e;
+}
+
+html {
+    font-size: 62.5%;
+}
