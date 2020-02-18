@@ -1,13 +1,17 @@
 .user-details {
-    font-size: 1.6rem;
+    border: 1px solid $color-gray-1;
 
     &__link {
-        
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
     }
 
     // user details header styles
     &__header {
-        height: 30rem;
+        height: 25rem;
         max-width: 100%;
         width: auto;
         margin-bottom: 1rem;
@@ -21,23 +25,98 @@
     }
 
     &__profile-img-container {
-        height: 30%;
-        width: 15%;
-    }
-
-    &__link--user-img {
-        
+        height: 10rem;
+        width: 10rem;
+        position: absolute;
+        top: 15rem;
+        left: 1rem;
     }
 
     &__profile-img {
         height: 100%;
         width: 100%;
         border-radius: 50%;
+        background: url(/images/user-images/user-profile-picture.jpeg) no-repeat center;
+        background-size: cover;
+        border: 5px solid $color-primary;
     }
 
     &__btn {
-        
+        position: absolute;
+        top: 21rem;
+        right: 1.5rem;
+        padding: 1rem 1.5rem;
     }
 
     // user details body styles
+    &__body {
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: $color-white;
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    &__username {
+        font-size: 1.4rem;
+        color: $color-gray;
+        margin-bottom: 1rem;
+    }
+
+    &__about {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        width: 100%;
+        list-style-type: none;
+        color: $color-gray;
+        margin-bottom: 1rem;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline;
+    }
+
+    &__icon {
+        vertical-align: middle;
+    }
+
+    &__website {
+        cursor: pointer;
+    }
+
+    &__link--website {
+        color: $btn-color-primary-darker;
+    }
+
+    &__follow-status {
+        font-size: 1.4rem;
+    }
+
+    &__following,
+    &__followers {
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-right: .3rem;
+    }
+
+    &__link--following {
+        margin-right: 2rem;
+    }
+
+    &__link--following,
+    &__link--followers {
+            color: $color-gray;
+        }
 }

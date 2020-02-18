@@ -57,6 +57,7 @@
 
     &__input {
         font-size: 1.6rem;
+        
         padding: 0 2rem;
         background-color: transparent;
         color: $input-font-color;
@@ -72,6 +73,7 @@
 
     &__more-icon-link {
         margin-right: .5rem;
+        z-index: 10000;
 
         display: flex;
         align-items: center;
