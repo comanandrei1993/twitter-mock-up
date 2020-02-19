@@ -1,5 +1,5 @@
 .user-details {
-    border: 1px solid $color-gray-1;
+    border-bottom: 1px solid $color-gray-1;
 
     &__link {
 
@@ -30,15 +30,22 @@
         position: absolute;
         top: 15rem;
         left: 1rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
     }
 
     &__profile-img {
         height: 100%;
         width: 100%;
-        border-radius: 50%;
         background: url(/images/user-images/user-profile-picture.jpeg) no-repeat center;
         background-size: cover;
-        border: 5px solid $color-primary;
+        border-radius: 50%;
+
+        transition: filter .2s ease-in;
+
+        &:hover {
+            filter: brightness(.85);
+        }
     }
 
     &__btn {
@@ -50,7 +57,7 @@
 
     // user details body styles
     &__body {
-        padding: 1rem;
+        padding: 0rem 1.5rem 1.5rem 2rem;
         font-size: 1.6rem;
         color: $color-white;
     }
@@ -119,4 +126,53 @@
     &__link--followers {
             color: $color-gray;
         }
+}
+
+//////////////////////////////
+// SMALLER SCREENS //////////
+////////////////////////////
+
+@media screen and (max-width: 365px) {
+    .user-details {
+        // user details header styles
+        &__header {
+            height: 14rem;
+        }
+    
+        &__cover-img {
+            height: 10rem;
+        }
+    
+        &__profile-img-container {
+            height: 7rem;
+            width: 7rem;
+            top: 8.5rem;
+        }
+    
+        &__btn {
+            top: 10.5rem;
+        }
+
+        &__body {
+            padding: 1rem 1.5rem 1rem 2rem;
+        }
+    }
+}
+
+//////////////////////////////
+// SMALL SCREENS ////////////
+////////////////////////////
+
+@media screen and (min-width: 366px) and (max-width: 599px) {
+
+}
+
+//////////////////////////////
+// MEDIUM SCREENS ///////////
+////////////////////////////
+
+@media screen and (min-width: 600px) {
+    .user-details {
+        border: 1px solid $color-gray-1;
+    }
 }

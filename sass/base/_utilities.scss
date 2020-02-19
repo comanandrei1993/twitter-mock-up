@@ -1,3 +1,19 @@
+.border-radius-top-left {
+    border-top-left-radius: 15px;
+}
+
+.border-radius-top-right {
+    border-top-right-radius: 15px;
+}
+
+.border-radius-bottom-left {
+    border-bottom-left-radius: 15px;
+}
+
+.border-radius-bottom-right {
+    border-bottom-right-radius: 15px;
+}
+
 
 .hr-thin {
     border: 0;
@@ -14,4 +30,15 @@
 .wrapper {
     max-width: 62rem;
     margin: 0 auto;
+}
+
+//////////////////////////////
+// LARGE SCREENS ////////////
+////////////////////////////
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        max-width: 100rem;
+        padding: 0 1rem;
+    }
 }

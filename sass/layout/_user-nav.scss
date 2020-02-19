@@ -1,15 +1,13 @@
 .user-nav {
     font-size: 1.4rem;
     font-weight: 600;
+    margin-top: 1rem;
     
     &__list {
         list-style-type: none;
 
         display: flex;
         justify-content: space-around;
-
-        // display: grid;
-        // grid-template-columns: repeat(4, 50px);
     }
 
     &__item {
@@ -46,9 +44,6 @@
         height: 100%;
         padding: 1rem 1rem;
         text-align: center;
-        
-        display: flex;
-        align-items: center;
 
         &,
         &:link,
@@ -62,4 +57,44 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+
+    &__item:first-child {
+        border-bottom: 2px solid $btn-color-primary;
+    }
+
+    &__item:first-child &__link{
+        color: $btn-color-primary;
+    }
+}
+
+//////////////////////////////
+// SMALLER SCREENS //////////
+////////////////////////////
+
+@media screen and (max-width: 365px) {
+    .user-nav {
+        &__list {
+            font-size: 1.3rem;
+        }
+    
+        &__link {
+            padding: .7rem .7rem;
+        }
+    }
+}
+
+//////////////////////////////
+// SMALL SCREENS ////////////
+////////////////////////////
+
+@media screen and (min-width: 366px) and (max-width: 599px) {
+
+}
+
+//////////////////////////////
+// MEDIUM SCREENS ///////////
+////////////////////////////
+
+@media screen and (min-width: 600px) {
+
 }

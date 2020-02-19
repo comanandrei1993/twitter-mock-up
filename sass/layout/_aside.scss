@@ -1,0 +1,251 @@
+.aside {
+    display: none;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 35rem;
+    position: sticky;
+    top: 0;
+
+    ////////////////////////
+    // SIGN UP BOX STYLES
+    &__sign-up {
+        height: 12.5rem;
+        padding: .5rem 1rem;
+        border: 1px solid $color-gray-1;
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__sign-up-heading {
+        padding: 0 .5rem;
+    }
+
+    &__paragraph {
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: $color-gray;
+    }
+
+    &__btn {
+        line-height: 2.5rem;
+    }
+
+    ///////////////////////////
+    // GRID IMAGES BOX STYLES
+    &__user-grid-images {
+        height: 20rem;
+        margin-top: 1.2rem;
+        border: 1px solid $color-primary-lighter;
+        border-radius: 15px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2px;
+    }
+
+    &__grid-image-container {
+        overflow: hidden;
+    }
+
+    &__grid-image {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    &__grid-image-1 {
+        background: url(/images/user-images/user-profile-picture.jpeg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__grid-image-2 {
+        background: url(/images/user-images/adria.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__grid-image-3 {
+        background: url(/images/user-images/burning-hells.jpeg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__grid-image-4 {
+        background: url(/images/user-images/malthael-soulstone.jpeg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__grid-image-5 {
+        background: url(/images/user-images/lilith.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__grid-image-6 {
+        background: url(/images/user-images/diablo-3.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    ////////////////////////
+    // SUGGESTED BOX STYLES
+    &__suggested-users {
+        height: 28rem;
+        margin-top: 1.2rem;
+        background-color: $color-primary-darker;
+        border-radius: 15px;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__suggested-users-heading {
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+
+    &__suggested-user {
+        height: 7rem;
+        padding: .5rem 2rem;
+        border-top: 1px solid $color-gray-1;
+        cursor: pointer;
+
+        transition: background-color .2s ease-in;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover {
+            background-color: rgba($color-gray-1, .2);
+        }
+    }
+
+    &__suggested-user-image-container {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+    }
+
+    &__suggested-user-image {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+
+        transition: filter .2s ease-in;
+
+        &:hover {
+            filter: brightness(.85);
+        }
+    }
+
+    &__suggested-user-image-1 {
+        background: url(/images/user-images/Mephisto.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__suggested-user-image-2 {
+        background: url(/images/user-images/lilith.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__suggested-user-image-3 {
+        background: url(/images/user-images/Baal.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__suggested-user-details {
+        margin-right: 3.5rem;
+    }
+
+    &__suggested-user-name {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-white;
+    }
+
+    &__suggested-user-username {
+        font-size: 1.4rem;
+        color: $color-gray;
+    }
+
+    &__suggester-user-btn {
+        height: 3rem;
+    }
+
+    &__sugested-users-show-more {
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        color: $btn-color-primary-darker;
+        height: 5rem;
+        border-top: 1px solid $color-gray-1;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba($color-gray-1, .2);
+        }
+    }
+
+    ////////////////////////
+    // TRENDS BOX STYLES
+    &__trends {
+        margin-top: 1.2rem;
+        padding: 1rem 1.5rem;
+        background-color: $color-primary-darker;
+        border-radius: 15px;
+        border-top: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-bottom: 1px solid $color-gray-1;
+    }
+
+    &__nav {
+        margin-top: 1.2rem;
+        margin-left: .5rem;
+
+        display: flex;
+    }
+
+    &__nav-element {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+
+        &,
+        &:link,
+        &:active {
+            color: $color-gray;
+        }
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+
+        &--more {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__nav-down-icon {
+        margin-left: .3rem;
+    }
+
+    &__copyright {
+        margin-top: 1.2rem;
+        margin-left: 1.5rem;
+        font-size: 1.2rem;
+        color: $color-gray;
+    }
+}
+
+//////////////////////////////
+// LARGE SCREENS ////////////
+////////////////////////////
+
+@media screen and (min-width: 1000px) {
+    .aside { 
+        display: block;
+    }
+}

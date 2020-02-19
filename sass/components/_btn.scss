@@ -8,7 +8,9 @@
     border: 1px solid $btn-color-primary;
     border-radius: 2.5rem;
 
-    transition: all .1s ease-in;
+    transition: background-color .1s ease-in,
+                color .1s ease-in,
+                border .1s ease-in;
 
     &:hover,
     &:active {

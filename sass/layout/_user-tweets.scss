@@ -1,4 +1,5 @@
 .user-tweets {
+    
     .pinned {
         padding-top: 3rem;
     }
@@ -8,7 +9,7 @@
         font-size: 1.2rem;
         position: absolute;
         top: 1rem;
-        left: 7rem;
+        left: 7.5rem;
         color: $color-gray;
     }
 
@@ -22,8 +23,7 @@
         position: relative;
         padding: 1.5rem;
         cursor: pointer;
-        border: 1px solid $color-gray-1;
-        border-top: none;
+        border-bottom: 1px solid $color-gray-1;
         transition: all .2s ease-in;
 
         display: flex;
@@ -33,25 +33,24 @@
         }
     }
 
-    &__user-img-container {
-        
-    }
-
     &__profile-img {
         background: url(/images/user-images/user-profile-picture.jpeg) no-repeat center;
         background-size: cover;
-        height: 4rem;
-        width: 4rem;
+        height: 4.5rem;
+        width: 4.5rem;
         border-radius: 50%;
+
+        transition: filter .2s ease-in;
+
+        &:hover {
+            filter: brightness(.85);
+        }
     }
 
     &__tweet-body {
         width: 100%;
+        margin-top: .5rem;
         margin-left: 1.5rem;
-    }
-
-    &__user {
-        
     }
 
     &__name {
@@ -87,10 +86,13 @@
 
     &__tweet-video {
         width: 100%;
+        margin-top: 1rem;
+        border: 1px solid $color-gray-1;
+        border-radius: 5px;
     }
 
     &__tweet-options {
-        
+        max-width: 44rem;
     }
 
     &__tweet-options-list {
@@ -104,6 +106,8 @@
     }
 
     &__tweet-options-item--comments {
+        justify-self: start;
+
         &:hover .user-tweets__tweet-options-link--comments,
         &:active .user-tweets__tweet-options-link--comments {
             color: $btn-color-primary;
@@ -116,6 +120,8 @@
     }
 
     &__tweet-options-item--retweets {
+        justify-self: center;
+
         &:hover .user-tweets__tweet-options-link--retweets,
         &:active .user-tweets__tweet-options-link--retweets {
             color: $btn-color-tertiary;
@@ -128,6 +134,8 @@
     }
 
     &__tweet-options-item--likes {
+        justify-self: end;
+
         &:hover .user-tweets__tweet-options-link--likes,
         &:active .user-tweets__tweet-options-link--likes {
             color: $btn-color-secondary;
@@ -140,6 +148,8 @@
     }
 
     &__tweet-options-item--upload {
+        justify-self: end;
+
         &:hover .user-tweets__tweet-options-link--upload,
         &:active .user-tweets__tweet-options-link--upload {
             color: $btn-color-primary;
@@ -172,19 +182,69 @@
         transition: all .2s ease-in;
     }
 
-    &__tweet-options-link--comments {
-        
+    &__tweet-embed-container {
+        &:hover .user-tweets__tweet-options-link--upload,
+        &:active .user-tweets__tweet-options-link--upload {
+            color: $btn-color-primary;
+        }
+
+        &:hover svg[fill="#6f7b86"] {
+            fill: $btn-color-primary;
+            background-color: rgba($btn-color-primary, .2);
+        }
     }
 
-    &__tweet-options-link--retweets {
-
+    &__tweet-embed-icon {
+        height: 7.5pt;
+        position: absolute;
+        top: 2.7rem;
+        right: 1rem;
     }
+}
 
-    &__tweet-options-link--likes {
+//////////////////////////////
+// SMALLER SCREENS //////////
+////////////////////////////
 
+@media screen and (max-width: 365px) {
+    .user-tweets {
+
+        .pinned::before {
+            left: 6.5rem;
+        }
+
+        &__profile-img {
+            height: 4rem;
+            width: 4rem;
+        }
+    
+        &__tweet-body {
+            margin-left: 1rem;
+        }
+
+        &__tweet-options-item--retweets {
+            justify-self: start;
+        }
     }
+}
 
-    &__tweet-options-link--upload {
+//////////////////////////////
+// SMALL SCREENS ////////////
+////////////////////////////
 
+@media screen and (min-width: 366px) and (max-width: 599px) {
+
+}
+
+//////////////////////////////
+// MEDIUM SCREENS ///////////
+////////////////////////////
+
+@media screen and (min-width: 600px) {
+    .user-tweets {
+        &__tweet {
+            border: 1px solid $color-gray-1;
+            border-top: none;
+        }
     }
 }
