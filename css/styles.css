@@ -10,8 +10,7 @@ a {
 
 body {
   box-sizing: border-box;
-  background-color: #15202B;
-  height: 500rem; }
+  background-color: #15202B; }
 
 html {
   font-size: 62.5%; }
@@ -80,7 +79,8 @@ body {
   margin-left: 2rem;
   width: 35rem;
   position: sticky;
-  top: 0; }
+  top: 6.5rem;
+  align-self: flex-start; }
   .aside__sign-up {
     height: 12.5rem;
     padding: .5rem 1rem;
@@ -457,8 +457,7 @@ body {
       border-bottom: 2px solid transparent;
       transition: all .2s ease-in; }
     .user-nav__item:hover, .user-nav__item:active {
-      background-color: rgba(23, 131, 199, 0.3);
-      border-bottom: 2px solid #1da1f2; }
+      background-color: rgba(23, 131, 199, 0.3); }
   .user-nav__item:hover .user-nav__link,
   .user-nav__item:active .user-nav__link {
     color: #1da1f2; }
@@ -482,6 +481,10 @@ body {
     font-size: 1.3rem; }
   .user-nav__link {
     padding: .7rem .7rem; } }
+
+@media screen and (min-width: 600px) {
+  .user-nav__link {
+    padding: 1.5rem; } }
 
 .user-tweets {
   font-size: 1.4rem;
