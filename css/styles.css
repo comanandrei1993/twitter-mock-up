@@ -63,9 +63,7 @@ body {
   background-color: #15202B;
   border: 1px solid #1da1f2;
   border-radius: 2.5rem;
-  transition: background-color .1s ease-in,
- color .1s ease-in,
- border .1s ease-in; }
+  transition: background-color .1s ease-in, color .1s ease-in, border .1s ease-in; }
   .btn:hover, .btn:active {
     background-color: #162D3F; }
   .btn--filled {
@@ -115,22 +113,22 @@ body {
     width: 100%;
     cursor: pointer; }
   .aside__grid-image-1 {
-    background: url(images/user-images/user-profile-picture.jpeg) no-repeat center;
+    background: url(../images/user-images/user-profile-picture.jpeg) no-repeat center;
     background-size: cover; }
   .aside__grid-image-2 {
-    background: url(images/user-images/adria.jpg) no-repeat center;
+    background: url(../images/user-images/adria.jpg) no-repeat center;
     background-size: cover; }
   .aside__grid-image-3 {
-    background: url(images/user-images/burning-hells.jpeg) no-repeat center;
+    background: url(../images/user-images/burning-hells.jpeg) no-repeat center;
     background-size: cover; }
   .aside__grid-image-4 {
-    background: url(images/user-images/malthael-soulstone.jpeg) no-repeat center;
+    background: url(../images/user-images/malthael-soulstone.jpeg) no-repeat center;
     background-size: cover; }
   .aside__grid-image-5 {
-    background: url(images/user-images/lilith.jpg) no-repeat center;
+    background: url(../images/user-images/lilith.jpg) no-repeat center;
     background-size: cover; }
   .aside__grid-image-6 {
-    background: url(images/user-images/diablo-3.jpg) no-repeat center;
+    background: url(../images/user-images/diablo-3.jpg) no-repeat center;
     background-size: cover; }
   .aside__suggested-users {
     height: 28rem;
@@ -166,13 +164,13 @@ body {
     .aside__suggested-user-image:hover {
       filter: brightness(0.85); }
   .aside__suggested-user-image-1 {
-    background: url(images/user-images/Mephisto.jpg) no-repeat center;
+    background: url(../images/user-images/Mephisto.jpg) no-repeat center;
     background-size: cover; }
   .aside__suggested-user-image-2 {
-    background: url(images/user-images/lilith.jpg) no-repeat center;
+    background: url(../images/user-images/lilith.jpg) no-repeat center;
     background-size: cover; }
   .aside__suggested-user-image-3 {
-    background: url(images/user-images/Baal.jpg) no-repeat center;
+    background: url(../images/user-images/Baal.jpg) no-repeat center;
     background-size: cover; }
   .aside__suggested-user-details {
     margin-right: 3.5rem; }
@@ -366,7 +364,7 @@ body {
   .user-details__profile-img {
     height: 100%;
     width: 100%;
-    background: url(images/user-images/user-profile-picture.jpeg) no-repeat center;
+    background: url(../images/user-images/user-profile-picture.jpeg) no-repeat center;
     background-size: cover;
     border-radius: 50%;
     transition: filter .2s ease-in; }
@@ -512,7 +510,7 @@ body {
     .user-tweets__tweet:hover {
       background-color: rgba(61, 84, 102, 0.2); }
   .user-tweets__profile-img {
-    background: url(images/user-images/user-profile-picture.jpeg) no-repeat center;
+    background: url(../images/user-images/user-profile-picture.jpeg) no-repeat center;
     background-size: cover;
     height: 4.5rem;
     width: 4.5rem;
