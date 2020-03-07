@@ -618,7 +618,8 @@ body {
 
 @media screen and (max-width: 365px) {
   .user-tweets .pinned::before {
-    left: 6.5rem; }
+    left: 4.4rem;
+    background-size: 12px 12px; }
   .user-tweets__profile-img {
     height: 4rem;
     width: 4rem; }

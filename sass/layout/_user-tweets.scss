@@ -212,7 +212,8 @@
     .user-tweets {
 
         .pinned::before {
-            left: 6.5rem;
+            left: 4.4rem;
+            background-size: 12px 12px;
         }
 
         &__profile-img {
