@@ -494,12 +494,14 @@ body {
   .user-tweets .pinned {
     padding-top: 3rem; }
   .user-tweets .pinned::before {
-    content: "Pinned Tweet";
+    content: "       Pinned Tweet";
+    white-space: pre;
     font-size: 1.2rem;
     position: absolute;
     top: 1rem;
-    left: 7.5rem;
-    color: #6f7b86; }
+    left: 5rem;
+    color: #6f7b86;
+    background: url(../images/icons/icon-pinned.svg) no-repeat left; }
   .user-tweets__tweet {
     position: relative;
     padding: 1.5rem;
